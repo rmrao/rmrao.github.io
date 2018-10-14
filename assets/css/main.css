@@ -328,6 +328,10 @@ img {
  }
 }
 
+.paper-meta p {
+    line-height: normal;
+}
+
 .image-paper {
     height: 200px;
     width: auto;
