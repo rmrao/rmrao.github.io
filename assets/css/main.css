@@ -1,0 +1,426 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: STANLEY - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  	background-color: #ffffff;
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+    scroll-behavior: smooth;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #1abc9c;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.navbar-inverse {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.navbar-inverse {
+	background-color: #1abc9c;
+	border-color: #16a085;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.progress-bar-theme {
+  background-color: #1abc9c;
+}
+
+.img-circle {
+    margin-bottom: 20px;
+}
+
+
+/* Helpers */
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pt {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+
+#footer {
+	background-color: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+
+#footer p {
+	color: white;
+}
+
+#footer h4 {
+	color: white;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f2f2f2;
+}
+
+#white {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+}
+
+
+
+/* Blog Date*/
+bd {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	font-weight: 700;
+}
+
+/* Blog Author*/
+ba {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* Blog Quote */
+.bq {
+	font-size: 22px;
+	padding-top: 30px;
+}
+
+/* Blog Tags */
+bt {
+	font-size: 12px;
+}
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom { 
+    display:block; 
+    position:relative; 
+    overflow:hidden; 
+    background:transparent url(../img/loader.gif) no-repeat center;
+}
+
+
+    .zoomOverlay {
+        position:absolute;
+        top:0; left:0;
+        bottom:0; right:0;
+        display:none;
+        background-image:url(
+
+            ./img/zoom.png);
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+.zoom2 {
+	opacity: 1;
+}
+
+.zoom2:hover {
+	opacity: 0.5;
+}
+
+/* glyphicon Configuration */
+
+.glyphicon {
+	font-size: 40px;
+	color: #1abc9c;
+}
+
+.navbar-hover {
+  text-transform: uppercase;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.navbar-center {
+  display: inline;
+  text-align: center;
+}
+
+.navbar-link {
+  display: inline-block;
+  width: 20%;
+  padding: .75rem 0;
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.section-title {
+ text-transform:uppercase;
+ letter-spacing:4px;
+ margin-bottom:40px;
+ text-align:center;
+ position:relative
+}
+
+.section-title:after {
+ content:'';
+ position:absolute;
+ bottom:-5px;
+ left:50%;
+ margin-left:-25px;
+ width:50px;
+ height:1px;
+ background:#222
+}
+
+.social a {
+ font-size: 14px;
+ margin-right:20px
+}
+
+dl {
+ margin-bottom:0px
+}
+dt,dd {
+ margin-bottom:0px
+}
+
+img {
+ height:100%;
+ width:auto
+}
+
+@media (min-width: 640px) {
+ dt,dd {
+  margin-bottom:0px
+ }
+ .experience dt {
+  width:30%;
+  padding-right:40px;
+  padding-top:10px
+ }
+ .experience dd {
+  width:70%;
+ }
+ .education dt,.education dd {
+  width:50%
+ }
+ .experience {
+    display: flex;
+ }
+}
+
+.image-paper {
+    height: 200px;
+    width: auto;
+    position: relative;
+    left: 0%;
+    top: 50%;
+}
+
+.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.authors {
+    display: inline;
+    font-size: 14px;
+}
+
+.me_author {
+    font-weight: bold;
+    display: inline;
+    font-size: 14px;
+}
+
+.award {
+    font-weight: bold;
+    display: inline;
+    font-size: 14px;
+}
+
+.conference {
+    font-style: italic;
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+
+.abstract {
+    padding-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+}
+
+.image-cropper {
+ width:350px;
+ height:350px;
+ position:relative;
+ left:40%;
+ top:50%;
+ overflow:hidden;
+ border-radius:50%
+}
+
+.image-cropper-small {
+ width:200px;
+ height:200px;
+ position:relative;
+ left:60%;
+ top:50%;
+ overflow:hidden;
+ border-radius:50%
+}
+
+.footer {
+    text-align: right;
+}
+
+.footer-contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.contact {
+    color: white;
+    float: right;
+    position:relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact a {
+    color: white;
+    float: right;
+    position:relative;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.divider {
+    position: absolute;
+    left:0px;
+    /*top:2px;*/
+}
