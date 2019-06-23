@@ -160,7 +160,7 @@ a:after {
 #footer {
 	background-color: #2f2f2f;
 	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-bottom: 50px;
 }
 
 #footer p {
@@ -217,10 +217,10 @@ bt {
 
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
 /* Effects also are controled by hover.zoom.js */
-.zoom { 
-    display:block; 
-    position:relative; 
-    overflow:hidden; 
+.zoom {
+    display:block;
+    position:relative;
+    overflow:hidden;
     background:transparent url(../img/loader.gif) no-repeat center;
 }
 
@@ -308,37 +308,44 @@ img {
  width:auto
 }
 
+article {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 640px) {
- dt,dd {
-  margin-bottom:0px
+ .paper image-paper {
  }
- .experience dt {
-  width:30%;
-  padding-right:40px;
-  padding-top:10px
+ .paper paper-desc {
  }
- .experience dd {
-  width:70%;
- }
- .education dt,.education dd {
-  width:50%
- }
- .experience {
+ .paper{
     display: flex;
  }
 }
 
-.paper-meta p {
-    line-height: normal;
+.paper-meta {
+    padding-bottom: 10px;
+
+    p {
+        padding-bottom: 0px;
+    }
 }
 
-.image-paper {
-    height: 200px;
-    width: auto;
-    position: relative;
-    left: 0%;
-    top: 50%;
+.paper-desc {
+    float: left;
+    width: 100%;
+    padding-right: auto;
 }
+
+.paper-image {
+    width: auto;
+    height: 200px;
+    float: left;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+#more {display: none;}
 
 .title {
     margin: 0;
@@ -374,6 +381,10 @@ img {
     text-align: justify;
     text-justify: inter-word;
     font-size: 14px;
+}
+
+.readmore-lnk {
+    padding-bottom: 20px;
 }
 
 .image-cropper {
