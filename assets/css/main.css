@@ -328,22 +328,19 @@ article {
     display: block;
 }
 
-.paper-image {
-    width: 33%;
-    float: left;
-    padding-right: 25px;
-    padding-bottom: 10px;
+
+.paper-info {
+    height: 10px;
 }
 
-.paper-image img {
-    width: 100%;
-    height: auto;
+.paper-image {
+    max-width: 100%;
+    max-height: 150px;
     vertical-align: "middle";
 }
 
 .paper-meta {
     float: right;
-    width: 67%;
     padding-right: auto;
     padding-bottom: 10px;
 
@@ -357,7 +354,7 @@ article {
     width: 100%;
 }
 
-#more {display: none;}
+#more {display: none;} 
 
 .title {
     margin: 0;

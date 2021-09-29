@@ -59,7 +59,7 @@
             <div class="col-lg-8 col-lg-offset-2 centered">
                 <img class="img-circle" src="assets/img/me.jpg" alt="Roshan Rao">
 
-                <p>I'm a third year PhD Student in CS at <a href=https://eecs.berkeley.edu/>UC Berkeley</a>. I work with <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/canny.html"/>John Canny</a> and <a href="https://people.eecs.berkeley.edu/~pabbeel/"/>Pieter Abbeel</a> on protein modeling with deep networks. I'm particularly interested in the use of semi-supervised learning for biological sequences, as well as for sequence modeling more generally.
+                <p>I am a fith year PhD Student in EECS at <a href=https://eecs.berkeley.edu/>UC Berkeley</a>. I work with <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/canny.html"/>John Canny</a> and <a href="https://people.eecs.berkeley.edu/~pabbeel/"/>Pieter Abbeel</a> on the design and interpretation of large-scale unsupervised models for protein sequences.
 
             </div><!-- /col-lg-8 -->
         </div><!-- /row -->
@@ -75,13 +75,115 @@
         <div class="col-lg-10 col-lg-offset-1">
         <div>
             <article class="paper">
-                <div style="paper-block">
-                    <div class="paper-image">
-                        <img src="assets/img/protein-tape.png">
+                <div class="row paper-block">
+                    <div class="col-lg-3">
+                        <img class="img-fluid paper-image" src="assets/img/mlm-scoring.png">
                     </div>
-                    <div class="paper-meta">
+                    <div class="col-lg-9 paper-meta">
+                        <p class="title">Language models enable zero-shot prediction of the effects of mutations on protein function</p>
+                        <p class="conference">NeurIPS 2021.</p>
+                        <p class="authors">Joshua Meier,</p>
+                        <p class="me_author">Roshan Rao,</p>
+                        <p class="authors">Robert Verkuil,</p>
+                        <p class="authors">Jason Liu,</p>
+                        <p class="authors">Tom Sercu,</p>
+                        <p class="authors">Alexander Rives</p>
+                        <div class="social">
+                            <a href="https://www.biorxiv.org/content/10.1101/2021.07.09.450648v1.full" target="_blank">bioRxiv</a>
+                            <a href="https://github.com/facebookresearch/esm" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 paper-desc">
+                        <p class="abstract">Modeling the effect of sequence variation on function is a fundamental problem for understanding and designing proteins. Since evolution encodes information about function into patterns in protein sequences, unsupervised models of variant effects can be learned from sequence data. The approach to date has been to fit a model to a family of related sequences. The conventional setting is limited, since a new model must be trained for each prediction task. We show that using only zero-shot inference, without any supervision from experimental data or additional training, protein language models capture the functional effects of sequence variation, performing at state-of-the-art.</p>
+                    </div>
+                </div>
+             </article>
+
+            <article class="paper">
+                <div class="row paper-block">
+                    <div class="col-lg-3">
+                        <img class="img-fluid paper-image" src="assets/img/4zjp_1_A.gif">
+                    </div>
+                    <div class="col-lg-9 paper-meta">
+                        <p class="title">MSA Transformer</p>
+                        <p class="conference">ICML 2021.</p>
+                        <p class="me_author">Roshan Rao,</p>
+                        <p class="authors">Jason Liu,</p>
+                        <p class="authors">Robert Verkuil,</p>
+                        <p class="authors">Joshua Meier,</p>
+                        <p class="authors">John Canny,</p>
+                        <p class="authors">Pieter Abbeel,</p>
+                        <p class="authors">Tom Sercu,</p>
+                        <p class="authors">Alexander Rives</p>
+                        <div class="social">
+                            <a href="https://www.biorxiv.org/content/10.1101/2021.02.12.430858v1" target="_blank">bioRxiv</a>
+                            <a href="https://github.com/facebookresearch/esm" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 paper-desc">
+                        <p class="abstract">Unsupervised protein language models trained across millions of diverse sequences learn structure and function of proteins. Protein language models studied to date have been trained to perform inference from individual sequences. The longstanding approach in computational biology has been to make inferences from a family of evolutionarily related sequences by fitting a model to each family independently. In this work we combine the two paradigms. We introduce a protein language model which takes as input a set of sequences in the form of a multiple sequence alignment. The model interleaves row and column attention across the input sequences and is trained with a variant of the masked language modeling objective across many protein families. The performance of the model surpasses current state-of-the-art unsupervised structure learning methods by a wide margin, with far greater parameter efficiency than prior state-of-the-art protein language models.</p>
+                    </div>
+                </div>
+             </article>
+
+            <article class="paper">
+                <div class="row paper-block">
+                    <div class="col-lg-3">
+                        <img class="img-fluid paper-image" src="assets/img/logistic_regression.png">
+                    </div>
+                    <div class="col-lg-9 paper-meta">
+                        <p class="title">Transformer protein language models are unsupervised structure learners</p>
+                        <p class="conference">ICLR 2021.</p>
+                        <p class="me_author">Roshan Rao,</p>
+                        <p class="authors">Joshua Meier,</p>
+                        <p class="authors">Tom Sercu,</p>
+                        <p class="authors">Sergey Ovchinnikov,</p>
+                        <p class="authors">Alexander Rives</p>
+                        <div class="social">
+                            <a href="https://www.biorxiv.org/content/10.1101/2020.12.15.422761v1" target="_blank">bioRxiv</a>
+                            <a href="https://github.com/facebookresearch/esm" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 paper-desc">
+                        <p class="abstract">Unsupervised contact prediction is central to uncovering physical, structural, and functional constraints for protein structure determination and design. For decades, the predominant approach has been to infer evolutionary constraints from a set of related sequences. In the past year, protein language models have emerged as a potential alternative, but performance has fallen short of state-of-the-art approaches in bioinformatics. In this paper we demonstrate that Transformer attention maps learn contacts from the unsupervised language modeling objective. We find the highest capacity models that have been trained to date already outperform a state-of-the-art unsupervised contact prediction pipeline, suggesting these pipelines can be replaced with a single forward pass of an end-to-end model.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="paper">
+                <div class="row paper-block">
+                    <div class="col-lg-3">
+                        <img class="img-fluid paper-image" src="assets/img/single-layers.png">
+                    </div>
+                    <div class="col-lg-9 paper-meta">
+                        <p class="title">Single Layers of Attention Suffice to Predict Protein Contacts</p>
+                        <p class="conference">bioRxiv 2020.<p/>
+                        <p class="authors">Nicholas Bhattacharya*,</p>
+                        <p class="authors">Neil Thomas*,</p>
+                        <p class="me_author">Roshan Rao,</p>
+                        <p class="authors">Justas Dauparas,</p>
+                        <p class="authors">Peter K. Koo,</p>
+                        <p class="authors">David Baker,</p>
+                        <p class="authors">Sergey Ovchinnikov</p>
+                        <div class="social">
+                            <a href="https://www.biorxiv.org/content/10.1101/2020.12.21.423882v2" target="_blank">bioRxiv</a>
+                            <a href="https://github.com/nickbhat/mogwai" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 paper-desc">
+                        <p class="abstract">The established approach to unsupervised protein contact prediction estimates co-evolving positions using undirected graphical models. This approach trains a Potts model on a Multiple Sequence Alignment, then predicts that the edges with highest weight correspond to contacts in the 3D structure. On the other hand, increasingly large Transformers are being pretrained on protein sequence databases but have demonstrated mixed results for downstream tasks, including contact prediction. This has sparked discussion about the role of scale and attention-based models in unsupervised protein representation learning. We argue that attention is a principled model of protein interactions, grounded in real properties of protein family data. We introduce a simplified attention layer, factored attention, and show that it achieves comparable performance to Potts models, while sharing parameters both within and across families. Further, we extract contacts from the attention maps of a pretrained Transformer and show they perform competitively with the other two approaches. This provides evidence that large-scale pretraining can learn meaningful protein features when presented with unlabeled and unaligned data. We contrast factored attention with the Transformer to indicate that the Transformer leverages hierarchical signal in protein family databases not captured by our single-layer models. This raises the exciting possibility for the development of powerful structured models of protein family databases.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="paper">
+                <div class="row paper-block">
+                    <div class="col-lg-3">
+                        <img class="img-fluid paper-image" src="assets/img/protein-tape.png">
+                    </div>
+                    <div class="col-lg-9 paper-meta">
                         <p class="title">Evaluating Protein Transfer Learning with TAPE</p>
-                        <p class="conference">Neural Information Processing Systems (NeurIPS) 2019. <span class="award">Spotlight.</span></p>
+                        <p class="conference">NeurIPS 2019. <span class="award">Spotlight.</span></p>
                         <p class="me_author">Roshan Rao*,</p>
                         <p class="authors">Nicholas Bhattacharya*,</p>
                         <p class="authors">Neil Thomas*,</p>
@@ -95,7 +197,7 @@
                             <a href="https://github.com/songlab-cal/TAPE" target="_blank">Github</a>
                         </div>
                     </div>
-                    <div class="paper-desc">
+                    <div class="col-lg-12 paper-desc">
                         <p class="abstract">Protein modeling is an increasingly popular area of machine learning research. Semi-supervised learning has emerged as an important paradigm in protein modeling due to the high cost of acquiring supervised protein labels, but the current literature is fragmented when it comes to datasets and standardized evaluation techniques. To facilitate progress in this field, we introduce the Tasks Assessing Protein Embeddings (TAPE), a set of five biologically relevant semi-supervised learning tasks spread across different domains of protein biology. We curate tasks into specific training, validation, and test splits to ensure that each task tests biologically relevant generalization that transfers to real-life scenarios. We bench-mark a range of approaches to semi-supervised protein representation learning, which span recent work as well as canonical sequence learning techniques. We find that self-supervised pretraining is helpful for almost all models on all tasks, more than doubling performance in some cases. Despite this increase, in several cases features learned by self-supervised pretraining still lag behind features extracted by state-of-the-art non-neural techniques. This gap in performance suggests a huge opportunity for innovative architecture design and improved modeling paradigms that better capture the signal in biological sequences. TAPE will help the machine learning community focus effort on scientifically relevant problems. Toward this end, all data and code used to run these experiments are available at <a href=https://github.com/songlab-cal/tape>https://github.com/songlab-cal/tape</a>.</p>
                     </div>
                 </div>
@@ -103,10 +205,10 @@
 
             <article class="paper">
                 <div class="paper-block">
-                    <div class="paper-image">
-                        <img src="assets/img/tsne.gif">
+                    <div class="col-lg-3">
+                        <img class="img-fluid paper-image" src="assets/img/tsne.gif">
                     </div>
-                    <div class="paper-meta">
+                    <div class="col-lg-9 paper-meta">
                         <p class="title">GPU-Accelerated t-SNE and its Applications to Modern Data</p>
                         <p class="conference">High Performance Machine Learning (HPML) 2018. <span class="award">Outstanding Paper Award.</span></p>
                         <p class="authors">David Chan*,</p>
@@ -118,7 +220,7 @@
                             <a href="https://github.com/CannyLab/tsne-cuda" target="_blank">Github</a>
                         </div>
                     </div>
-                    <div class="paper-desc">
+                    <div class="col-lg-12 paper-desc">
                         <p class="abstract">This paper introduces t-SNE-CUDA, a GPU-accelerated implementation of t-distributed Symmetric Neighbor Embedding (t-SNE) for visualizing datasets and models. t-SNE-CUDA significantly outperforms current implementations with 50-700x speedups on the CIFAR-10 and MNIST datasets. These speedups enable, for the first time, visualization of the neural network activations on the entire ImageNet dataset - a feat that was previously computationally intractable. We also demonstrate visualization performance in the NLP domain by visualizing the GloVe embedding vectors. From these visualizations, we can draw interesting conclusions about using the L2 metric in these embedding spaces.</p>
                     </div>
                  </div>
@@ -153,7 +255,7 @@
     <script src="assets/js/more.js"></script>
     <script src="assets/node_modules/readmore-js/readmore.js"></script>
     <script>$('article').readmore({
-      collapsedHeight: 300,
+      collapsedHeight: 210,
       speed: 200,
         moreLink: '<span class="readmore-lnk"><a href="#">Read more</a></span>',
         lessLink: '<span class="readmore-lnk"><a href="#">Close</a></span>'
