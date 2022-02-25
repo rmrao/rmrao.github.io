@@ -354,7 +354,7 @@ article {
     width: 100%;
 }
 
-#more {display: none;} 
+#more {display: none;}
 
 .title {
     margin: 0;
@@ -396,6 +396,18 @@ article {
 
 .readmore-lnk {
     padding-bottom: 3em;
+}
+
+.img-icon {
+    width: auto;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.img-aligner {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .image-cropper {
